@@ -3,6 +3,7 @@
 class Cocktail < ApplicationRecord # :nodoc:
   validates :name, uniqueness: true, presence: true
   has_many :doses
-  has_many :dose, dependent: :destroy
+  has_many :doses, dependent: :destroy
   has_many :ingredients, through: :doses
+  has_many :reviews
 end

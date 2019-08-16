@@ -11,6 +11,8 @@ class CocktailsController < ApplicationController #:nodoc:
 
   def show
     @cocktail = Cocktail.find(params[:id])
+    @dose = Dose.new
+    @review = Review.new
   end
 
   def create
@@ -25,6 +27,6 @@ class CocktailsController < ApplicationController #:nodoc:
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :ingredient)
   end
 end
