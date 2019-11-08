@@ -7,4 +7,6 @@ Rails.application.routes.draw do #:nodoc"
     resources :reviews, only: [:create]
   end
   resources :doses, only: [:destroy]
+  root to: 'articles#index'
+  resources :articles, except: :index
 end
