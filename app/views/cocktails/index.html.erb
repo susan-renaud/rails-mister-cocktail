@@ -3,19 +3,20 @@
     <%= image_tag "SRCocktail.png" %>
   <% end %>
 
+    <h1>Cocktailsium </h1>
+      <h3>Handcrafted cocktails made with quality ingredients.</h3>
+
+
   <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-info btn-lg" %>
 
 </div>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('<%= image_path 'Bar.jpg' %>');">
-  <div class="container">
-    <h1>Susan's Cocktails </h1>
-      <h2>Classic cocktails made with quality ingredients</h2>
-  </div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path 'Bar.jpg' %>');">
+
   <div class="container-drinks">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'amaretto_sour.png' %>');">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= image_path 'amaretto_sour.png' %>');">
           <div class="card-description">
           </div>
             <%= link_to cocktail.name, cocktail_path(cocktail), class: 'card-link' %>

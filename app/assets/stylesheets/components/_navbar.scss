@@ -8,8 +8,33 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 55px;
   border-radius: 50%;
 }
 
+.navbar-lewagon h1 {
+  color: black;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
+}
+
+.navbar-lewagon h3 {
+  font-size: 30px;
+   color: #F5BD69;
+  margin: 30px 10px 30px 40px;
+  text-align: center;
+}
+
+
+a.btn.btn-info.btn-lg {
+  font-family: "Raleway";
+  color: black;
+  background-color: #F5BD69;
+  border-color: black;
+  border-radius: 8px;
+  margin-left: 3em;
+}
 
