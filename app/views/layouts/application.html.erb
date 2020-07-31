@@ -11,6 +11,19 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <div class="navbar navbar-expand-sm navbar-light navbar-susan">
+  <%= link_to "/", class: "navbar-brand" do %>
+    <%= image_tag "SRCocktail.png" %>
+  <% end %>
+
+    <h1>Cocktailsium </h1>
+      <h3>Handcrafted cocktails made with quality ingredients.</h3>
+
+
+  <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-info btn-lg" %>
+
+  </div>
+
 
 
   <body>
@@ -18,4 +31,16 @@
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>
   </body>
+  <div class="footer">
+    <div class="footer-links">
+      <a href="http://www.github.com/susan-renaud"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/susan_renaud/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=1530420089"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/susanelizabethrenaud/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+     This website was coded with <i class="fas fa-heart"></i> by Susan Renaud
+    </div>
+  </div>
+
 </html>

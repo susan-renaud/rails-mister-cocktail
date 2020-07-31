@@ -1,17 +1,3 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-susan">
-  <%= link_to "/", class: "navbar-brand" do %>
-    <%= image_tag "SRCocktail.png" %>
-  <% end %>
-
-    <h1>Cocktailsium </h1>
-      <h3>Handcrafted cocktails made with quality ingredients.</h3>
-
-
-  <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-info btn-lg" %>
-
-</div>
-<div class="container">
-
   <h1><%= @cocktail.name %></h1>
   <%= link_to "Back to all cocktails", cocktails_path %>
 
@@ -65,17 +51,4 @@
   <% end %>
 
   <%= render "reviews/new", cocktail: @cocktail, review: @review %>
-
-</div>
-<div class="footer">
-  <div class="footer-links">
-    <a href="http://www.github.com/susan-renaud"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/susan_renaud/"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=1530420089"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.linkedin.com/in/susanelizabethrenaud/"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright">
-    This website was coded with <i class="fas fa-heart"></i> by Susan Renaud
-  </div>
-</div>
 
